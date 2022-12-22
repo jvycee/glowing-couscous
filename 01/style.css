@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +9,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  font-family: IBM Plex Sans, sans-serif;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 header {
@@ -26,6 +28,12 @@ header {
   background-color: rgb(240, 240, 240);
 }
 
+.share-button svg {
+  margin-left: 12px;
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+}
+
 .container {
   width: 91%;
   max-width: 680px;
@@ -36,10 +44,56 @@ header {
   margin-top: 15px;
 }
 
+h1 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+}
+
 .tile {
   width: 100%;
   background-color: rgb(37, 37, 37);
   margin: 7px;
   border-radius: 17px;
-  height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tile:hover {
+  transition: cubic-bezier(0.07, 1.41, 0.82, 1.14) 0.2s;
+  transform: scale(1.03);
+}
+
+.tile-share {
+  margin: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(52, 52, 52);
+}
+
+.tile-share svg {
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+.image-container {
+  height: 96px;
+  width: 96px;
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+.image-container img {
+  height: 100%;
+}
+
+.icon {
+  width: 44px;
+  height: 44px;
+  margin: 4px 8px;
 }
